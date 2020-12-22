@@ -5,9 +5,11 @@ Home: https://github.com/rianhunter/userspacefs
 
 Package license: GPL-3.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/userspacefs-feedstock/blob/master/LICENSE.txt)
 
 Summary: Cross-platform user-space file systems for Python
+
+Development: https://github.com/rianhunter/userspacefs
 
 userspacefs is a library that allows you to easily write cross-platform
 user-space file systems in Python. macOS and Linux has been tested, but it
