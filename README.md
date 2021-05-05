@@ -5,9 +5,11 @@ Home: https://github.com/rianhunter/userspacefs
 
 Package license: GPL-3.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/userspacefs-feedstock/blob/master/LICENSE.txt)
 
 Summary: Cross-platform user-space file systems for Python
+
+Development: https://github.com/rianhunter/userspacefs
 
 userspacefs is a library that allows you to easily write cross-platform
 user-space file systems in Python. macOS and Linux has been tested, but it
@@ -43,6 +45,7 @@ Installing `userspacefs` from the `conda-forge` channel can be achieved by addin
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `userspacefs` can be installed with:
@@ -113,9 +116,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
