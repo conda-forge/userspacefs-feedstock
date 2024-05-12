@@ -1,5 +1,5 @@
 {% set name = "userspacefs" %}
-{% set version = "1.0.13" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5f4cffa4a40dbedc362544f2802d9806b3d435f8e615bb313c75f0eea528df4f
+  sha256: 5780d053dd720fa61d5ee06806536d8054924989afb16a43114f2708ef115f34
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vvv"
+  script: {{ PYTHON }} -m pip install . -vvv
 
 requirements:
   host:
@@ -31,8 +31,8 @@ about:
   license: GPL-3.0
   license_family: GPL
   # https://github.com/rianhunter/userspacefs/pull/3
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
-  summary: 'Cross-platform user-space file systems for Python'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
+  summary: Cross-platform user-space file systems for Python
   description: |
     userspacefs is a library that allows you to easily write cross-platform
     user-space file systems in Python. macOS and Linux has been tested, but it
